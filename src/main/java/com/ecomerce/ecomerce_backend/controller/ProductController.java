@@ -10,20 +10,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import com.ecomerce.ecomerce_backend.model.Product;
 import com.ecomerce.ecomerce_backend.service.ProductService;
 
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
-    
+
+    @Autowired
     private ProductService productService;
-    
+
     @GetMapping
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
-
 
     @PostMapping
     public Product createProduct(@RequestBody Product product) {
@@ -35,5 +36,4 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 
-    
 }
