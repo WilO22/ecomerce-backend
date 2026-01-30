@@ -18,9 +18,8 @@ public class CorsConfig {
         // Permitir orígenes específicos
         config.setAllowedOrigins(Arrays.asList(
                 "http://localhost:4200", // Angular dev server
-                "http://localhost:4000", // Por si usas otro puerto
-                "https://tu-frontend.vercel.app", // Cambiar cuando despliegues el frontend
-                "https://tu-frontend.netlify.app" // Cambiar cuando despliegues el frontend
+                "http://localhost:4000",
+                "https://ecomerce-frontend-elh0.onrender.com" // URL Producción Frontend
         ));
 
         // Métodos HTTP permitidos
