@@ -19,7 +19,7 @@ public class CorsConfig {
         config.setAllowedOrigins(Arrays.asList(
                 "http://localhost:4200", // Angular dev server
                 "http://localhost:4000",
-                "https://ecomerce-frontend-elh0.onrender.com" // URL Producción Frontend
+                "https://ecomerce-frontend-e1h0.onrender.com" // URL Producción Frontend
         ));
 
         // Métodos HTTP permitidos
